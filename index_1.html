@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table & List</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 2px solid red;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            height: 80px;
+        }
+
+        td {
+            height: 40px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        td:hover {
+            background-color: aqua;
+        }
+
+        tr:nth-child(even) {
+            background-color: bisque;
+        }
+
+        #ul1, #li1 {
+            display: inline;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>nama</th>
+            <th>kota</th>
+            <th>gol. darah</th>
+        </tr>
+        <tr>
+            <td>hantu</td>
+            <td>pemangkat</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>agus</td>
+            <td>lonam</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>buntung</td>
+            <td>tebas</td>
+            <td>AB</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>No</th>
+            <th colspan="2">Nama</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>agus</td>
+            <td>buntung</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>hantu</td>
+            <td>potong</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>Language</th>
+            <th>Framework</th>
+        </tr>
+        <tr>
+            <td rowspan="2">PHP</td>
+            <td>Laravel</td>
+        </tr>
+        <tr>
+            <td>Codeigniter</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Ruby</td>
+            <td>Ruby in Rails</td>
+        </tr>
+        <tr>
+            <td>Sinatra</td>
+        </tr>
+    </table>
+
+    <!-- List -->
+    <h1>Resep Pancake</h1>
+    <h2>Bahan</h2>
+    <ul>
+        <li>250gr tepung terigu</li>
+        <li>1 butir telur</li>
+        <li>1 1/2 gelas susu</li>
+        <li>1 sdm baking powder</li>
+    </ul>
+    <ol>
+        <li>250gr tepung terigu</li>
+        <li>1 butir telur</li>
+        <li>1 1/2 gelas susu</li>
+        <li>1 sdm baking powder</li>
+    </ol>
+    <ul>
+        <li>Pakaian
+            <ul style="list-style-type: square;">
+                <li>Atasan</li>
+                <li>Bawahan</li>
+            </ul>
+        </li>
+        <li>Sepatu
+            <ul>
+                <li>Sepatu derbies</li>
+                <li>Sneakers & Skate</li>
+            </ul>
+        </li>
+    </ul>
+    <ol type="A">
+        <li>Pakaian
+            <ol type="I">
+                <li>Atasan</li>
+                <li>Bawahan</li>
+            </ol>
+        </li>
+        <li>Sepatu
+            <ol type="a">
+                <li>Sepatu derbies</li>
+                <li>Sneakers & Skate</li>
+            </ol>
+        </li>
+    </ol>
+    <ul id="ul1">
+        <li id="li1">Nasi goreng</li>
+        <li id="li1">Ayam goreng</li>
+        <li id="li1">Nasi kuning</li>
+        <li id="li1">Bubur</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <p><i>Ini Sigma ya😂</i></p>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Greek_uc_sigma.svg">
+        </li>
+    </ul>
+</body>
+
+</html>
